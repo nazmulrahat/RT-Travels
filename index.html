@@ -1,20 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RT-Travels</title>
-</head>         
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RT-Travels</title>
+  <!-- tailwindcss and daisyUI -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="style/styel.css">
+</head>
+
 <body>
-    <header>
+  <header>
+    <!-- nav -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a></a></li>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-extrabold ">RT-Travels</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn font-bold text-green-400 border-green-400 bg-green-200"> Bus <img src="images/bus-icon.png"></a>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <section class="flex justify-center">
+      <div class="banner text-center pt-24 " >
+        <h1 class="text-white font-extrabold text-6xl">End-to-End Travel with</h1>
+        <br>
+        <h1 class="text-green-500 font-extrabold text-6xl">P Paribahan</h1>
+        <br>
+        <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The <br> integrated  testing features allow for a streamlined .</p>
+        <br> <br>
+        <button class="btn bg-green-500 border-none  text-black font-bold"> Buy Tickets</button>
+      </div>
+    </section>
+  </header>
+  <main>
+    <!-- Best offers for you -->
+    <section>
+     <div >
+      <h1 class="text-black font-extrabold text-4xl rounded-sm">Best offers for you</h1>
+      <!-- ss -->
+      <div >
+      
+        <div class="text-center pt-16">
+          
+          <div >
+            <div style="background-image: url('./images/holud.png');" class="h-52 w-[573px] bg-no-repeat  flex justify-center items-center rounded-xl">
+              <!-- 15% off -->
+              <p>
+                <span class="text-black text-4xl font-extrabold">15% OFF</span> <br>
+              <span class="text-xl font-bold"> on your next purchase </span><br>
+               <span class="text-black text-lg">use by January 2024</span>
+              </p>
+               <!-- img -->
+               <img src="images/majkhan.png">
+               <p>
+                <span class="text-3xl text-black font-bold">NEW15</span> <br>
+                <span class="text-xl text-black">Coupon Code</span>
+               </p>
+              </div>
+      </div>
+      <!-- ssdd -->
+      <div>
+        <div class="text-center pt-16">
+          
+          <div class="gap-14">
+            <div style="background-image: url('./images/gulapi.png');" class="h-52 w-[573px] bg-no-repeat  flex justify-center items-center rounded-xl">
+              <!-- 15% off -->
+              <p>
+                <span class="text-black text-4xl font-extrabold">20% OFF</span> <br>
+              <span class="text-xl font-bold"> on your next purchase </span><br>
+               <span class="text-black text-lg">use by January 2024</span>
+              </p>
+               <!-- img -->
+               <img src="images/majkhan.png">
+               <p>
+                <span class="text-3xl text-black font-bold">Couple 20</span> <br>
+                <span class="text-xl text-black">Coupon Code</span>
+               </p>
+              </div>
+      </div>
+      <!-- ss -->
+     </div>
+           
+    </section>
 
-    </header>
-    <main>
+  </main>
+  <footer>
 
-    </main>
-    <footer>
-        
-    </footer>
-    
+  </footer>
 </body>
+
 </html>
