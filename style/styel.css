@@ -1,7 +1,7 @@
 .banner{
     height: 550px; 
     width: 1171px;
-   border: 2px solid tomato;
+  
   background-image: url("../images/banner.png");
 }
 .offer1{
