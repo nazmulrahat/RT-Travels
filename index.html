@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style/styel.css">
 </head>
 
-<body>
+<body  >
   <header>
     <!-- nav -->
     <nav>
@@ -65,10 +65,8 @@
       
     </section>
      <!-- banner er n 3 box -->
-   <div class=" w-[1150px] flex justify-around mx-96 -translate-y-14 ">
-    <!-- ---- -->
-    
-    <!-- ---- -->
+   <div class=" w-[1150px] flex justify-center mx-96 -translate-y-14 ">
+   <div class="flex gap-14 justify-around">
     <div style="background-image: url('./images/bbbb.png'); height: 138px; width: 308px;" >
       <div
       
@@ -106,6 +104,7 @@
      
 
     </div>
+   </div>
    </div>
     <!-- -------------------------------- -->
   </header>
@@ -199,7 +198,7 @@
                 </div>
                 <div>
                   <button class="btn bg-green-100 text-green-500 font-bold"> <img src="images/seat-green.png">
-                    <span>40</span> Seats left</button>
+                    <span id="left">40</span> Seats left</button>
                 </div>
               </div>
               <!-- 2 -->
@@ -277,6 +276,9 @@
                     <img src="images/whil.png" alt="">
 
                   </button>
+                </div>
+                <div class="text-white">
+                  <h1><span id="no-more-set">5</span></h1>
                 </div>
                 <!-- set chair -->
                 <div class=" flex flex-row justify-around">
@@ -441,26 +443,27 @@
                     <p>Price</p>
                   </div>
                   <img src="images/Line 5 (1).png" alt="">
-                  <div id="select-set"></div>
+                  
                   <div class="flex flex-row  justify-around text-base font-medium text-gray-400">
                     <p>C2</p>
-                    <p>Economoy </p>
-                    <p>550</p>
+                    <p id="set-class">Economoy </p>
+                    <p id="taka">550</p>
                   </div>
+                  <div id="select-set"></div>
                   <img src="images/Line 6.png" alt="">
                   <div class="flex flex-row  justify-around text-base font-bold ">
                     <p>Total Price</p>
 
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="total-cost">0</span></p>
                   </div>
                   <div class="join h-14 w-96 ml-16 ">
-                    <input type="text" placeholder="Have any copupon?" class="input input-bordered join-item" />
-                    <button class="btn join-item w-20 h-10 text-white bg-green-500">Apply</button>
+                    <input id="coupon-code" type="text" placeholder="Have any copupon?" class="input input-bordered join-item" />
+                    <button ondblclick="updateGrandTotal('apply-btn')"  id="apply-btn" class="btn join-item w-20 h-10 text-white bg-green-500">Apply</button>
                   </div>
                   <div class="flex flex-row  justify-around text-base font-bold ">
                     <p>Grand Total</p>
 
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="grand-total">0</span></p>
                   </div>
 
                 </div>
@@ -574,6 +577,7 @@
     
     
     
+    
 
     </div>
 
@@ -584,3 +588,6 @@
 </body>
 
 </html>
+
+
+>

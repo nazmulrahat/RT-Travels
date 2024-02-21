@@ -13,3 +13,9 @@
   text-align: left;
 }
 
+.set-book{
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+}

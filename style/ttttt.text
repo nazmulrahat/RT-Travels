@@ -1,7 +1,0 @@
- const selectSet = document.getElementById("select-set");
-        const div = document.createElement("div");
-        const p1=createElement("p");
-        const p2=createElement("p");
-        p1.innerText = set;
-        div.appendChild(p1);
-        selectSet.appendChild(div);
